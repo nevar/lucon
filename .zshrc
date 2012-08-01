@@ -37,19 +37,19 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 
 case `hostname` in
 	hell)
-		MY_HOST='%{$fg[yellow]%U%}%m%{%u${reset_color}'
+		MY_HOST='%{$fg[yellow]%U%}%m%{%u${reset_color}%}'
 		;;
 	dev-mx)
-		MY_HOST='%{$fg[green]%U%}%m%{%u${reset_color}'
+		MY_HOST='%{$fg[green]%U%}%m%{%u${reset_color}%}'
 		;;
 	dev-webnode1)
-		MY_HOST='%{$fg[blue]%U%}%m%{%u${reset_color}'
+		MY_HOST='%{$fg[blue]%U%}%m%{%u${reset_color}%}'
 		;;
 	*)
-		MY_HOST='%{$fg[white]%U%}%m%{%u${reset_color}'
+		MY_HOST='%{$fg[white]%U%}%m%{%u${reset_color}%}'
 		;;
 esac
-USER='%{$fg[yellow]%U%}%n%{%u${reset_color}'
+USER='%{$fg[yellow]%U%}%n%{%u${reset_color}%}'
 PROMPT="$USER@$MY_HOST:%{$fg[blue]%}%~%{$fg[red]%}\$ %{${reset_color}%}"
 
 # enable color support of ls and also add handy aliases
